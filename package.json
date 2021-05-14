@@ -1,0 +1,36 @@
+{
+  "name": "coding-task",
+  "version": "1.0.0",
+  "description": "\"\"",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon server",
+    "migrate": "npx sequelize-cli db:migrate",
+    "undo": "sequelize-cli db:migrate:undo",
+    "undo:all": "npx sequelize-cli db:migrate:undo:all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zulieh/coding-task.git"
+  },
+  "author": "zulieh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zulieh/coding-task/issues"
+  },
+  "homepage": "https://github.com/zulieh/coding-task#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.11.1",
+    "morgan": "^1.10.0",
+    "pg": "^8.6.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
